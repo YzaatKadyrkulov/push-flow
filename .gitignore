@@ -1,0 +1,8 @@
+.idea/
+venv/
+__pycache__/
+*.log
+*.class
+*.jar
+target/
+build/

@@ -1,17 +1,18 @@
 #!/bin/bash
 
-cd /home//push-flow || exit
+# Путь к проекту на Windows через Git Bash
+project_dir="/c/Users/NAZIMA KYLYCHBEKOVA/PycharmProjects/push-flow"
+cd "$project_dir" || exit
 
-commits_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/commits_today.txt"
-last_clean_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/last_clean_date.txt"
-last_push_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/last_push_time.txt"
-log_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/auto_update.txt"
+commits_file="$project_dir/commits_today.txt"
+last_clean_file="$project_dir/last_clean_date.txt"
+last_push_file="$project_dir/last_push_time.txt"
+log_file="$project_dir/auto_update.txt"
 
 current_date=$(date +%Y-%m-%d)
 
 if [ ! -f "$last_clean_file" ] || [ "$current_date" != "$(cat "$last_clean_file")" ]; then
     > "$log_file"
-
     echo "$current_date" > "$last_clean_file"
 
     commits_today=$((65 + RANDOM % 16))
