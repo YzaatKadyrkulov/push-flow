@@ -1,11 +1,11 @@
 #!/bin/bash
 
-cd /home/beqishh/push-flow || exit
+cd /home//push-flow || exit
 
-commits_file="/home/beqishh/push-flow/commits_today.txt"
-last_clean_file="/home/beqishh/push-flow/last_clean_date.txt"
-last_push_file="/home/beqishh/push-flow/last_push_time.txt"
-log_file="/home/beqishh/push-flow/auto_update.txt"
+commits_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/commits_today.txt"
+last_clean_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/last_clean_date.txt"
+last_push_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/last_push_time.txt"
+log_file="/home/NAZIMA KYLYCHBEKOVA/push-flow/auto_update.txt"
 
 current_date=$(date +%Y-%m-%d)
 

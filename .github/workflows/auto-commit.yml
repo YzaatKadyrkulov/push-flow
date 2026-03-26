@@ -14,8 +14,8 @@ jobs:
 
       - name: Configure git
         run: |
-          git config user.name "bekishh"
-          git config user.email "beknazarzholdoshbekov1@gmail.com"
+          git config user.name "YzaatKadyrkulov"
+          git config user.email "yzaatkadyrkulov7@gmail.com"
 
       - name: Make changes
         run: |
@@ -27,5 +27,5 @@ jobs:
         env:
           TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git remote set-url origin https://x-access-token:${TOKEN}@github.com/bekishh/push-flow.git
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/YzaatKadyrkulov/push-flow.git
           git push
