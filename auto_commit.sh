@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Путь к проекту на Windows через Git Bash
+# TODO Путь к проекту на Windows через Git Bash
 project_dir="/c/Users/NAZIMA KYLYCHBEKOVA/PycharmProjects/push-flow"
 cd "$project_dir" || exit
 
