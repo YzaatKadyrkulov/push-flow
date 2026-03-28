@@ -1,4 +1,5 @@
 C:\Program Files\Git\bin\bash.exe
+
 # Windows Git Bash compatible script
 project_dir="/c/Users/NAZIMA KYLYCHBEKOVA/PycharmProjects/push-flow"
 cd "$project_dir" || exit
