@@ -10,7 +10,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Configure git
         run: |
@@ -28,4 +30,5 @@ jobs:
           TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/YzaatKadyrkulov/push-flow.git
-          git push
+          git pull --rebase origin main
+          git push origin main
